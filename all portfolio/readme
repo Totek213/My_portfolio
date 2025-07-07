@@ -1,0 +1,66 @@
+# NewsSense AI: Your Smart News Curator
+
+NewsSense AI is a conceptual project for a personalized news assistant that leverages Machine Learning (ML) to filter content, summarize articles, identify key topics, and help users navigate the vast amount of daily information.
+
+This repository contains a simplified Python implementation demonstrating the core ML functionalities of such a bot.
+
+---
+
+## 🚀 Features (Simplified Implementation)
+
+* **Article Retrieval (Simulated):** Reads from a predefined list of article texts.
+* **Automatic Text Summarization:** Generates concise summaries of articles using an extractive method (LSA).
+* **Topic Modeling:** Identifies overarching themes within articles using Latent Dirichlet Allocation (LDA).
+* **Basic Recommendation System:** Provides article recommendations based on detected topics and a user's preferred topic (a highly simplified version of a real recommendation engine).
+
+---
+
+## 🛠️ Technologies Used
+
+* **Python 3.x**
+* **`sumy`**: For text summarization (LSA algorithm).
+* **`gensim`**: For topic modeling (LDA).
+* **`nltk`**: For natural language processing tasks like tokenization and lemmatization.
+* **`pandas`**: For efficient data handling and article management.
+* **`scikit-learn`**: (Included for potential future expansion, not directly used in the basic ML pipeline here).
+
+---
+
+## 💻 Installation
+
+1.  **Clone the repository (or copy the code):**
+    ```bash
+    git clone <your-repo-link> # (If this were a real repo)
+    cd news-sense-ai          # (If you cloned it)
+    ```
+2.  **Install the required Python packages:**
+    ```bash
+    pip install sumy gensim nltk pandas scikit-learn
+    ```
+3.  **Download NLTK data:**
+    You'll need the `punkt` and `wordnet` tokenizers for NLTK. Run this command in your Python environment:
+    ```python
+    import nltk
+    nltk.download('punkt')
+    nltk.download('wordnet')
+    ```
+
+---
+
+## 🚀 How to Run
+
+1.  **Execute the Python script:**
+    ```bash
+    python news_sense_ai.py
+    ```
+2.  **Follow the on-screen menu:**
+    The bot will present a console menu allowing you to:
+    * Display all available articles and their summaries.
+    * View the detected topics for a specific article ID.
+    * Get recommendations by specifying a preferred topic ID (0, 1, 2, etc.) or choosing 'none' for general recommendations.
+
+---
+
+## ⚙️ Project Structure (Conceptual)
+
+While this example is a single script, a full-fledged NewsSense AI system would likely have a more complex architecture:
