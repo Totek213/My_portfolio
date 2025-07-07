@@ -1,0 +1,88 @@
+# 🤖 GPT LLM Chatbot
+
+A simple command-line chatbot built in Python using OpenAI's GPT models (`gpt-3.5-turbo` or `gpt-4`). This project shows how to use a large language model (LLM) to create a conversational assistant in your terminal.
+
+---
+
+## 📦 Requirements
+
+- Python 3.7 or newer
+- `openai` library
+
+Install the required package:
+
+```bash
+pip install openai
+```
+
+---
+
+## 🔐 Setup
+
+1. Get your OpenAI API key:  
+   https://platform.openai.com/account/api-keys
+
+2. Set your API key directly in the script:
+
+```python
+openai.api_key = "your-api-key-here"
+```
+
+Or use an environment variable (recommended):
+
+```bash
+export OPENAI_API_KEY=your-api-key
+```
+
+And in your code:
+
+```python
+import os
+openai.api_key = os.getenv("OPENAI_API_KEY")
+```
+
+---
+
+## ▶️ How to Run
+
+Just run the script in your terminal:
+
+```bash
+python llm_chatbot.py
+```
+
+Example interaction:
+
+```
+You: Hello!
+Bot: Hello! How can I assist you today?
+```
+
+Type `exit` or `quit` to end the chat.
+
+---
+
+## 🧠 How It Works
+
+The script sends your message to OpenAI's API and returns a response from the GPT model. It uses:
+
+- `gpt-3.5-turbo` or `gpt-4`
+- `openai.ChatCompletion` API
+- Basic conversation flow
+
+---
+
+## 💡 Ideas for Expansion
+
+- Add memory (chat history)
+- Build a web app (Flask, Streamlit)
+- Voice input/output
+- Telegram or Discord bot integration
+
+---
+
+## 📜 License
+
+MIT License
+
+---
